@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="en">
+    <script src="https://kit.fontawesome.com/9df4c6069a.js" crossorigin="anonymous"></script>
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+     #logoname{
+        color:aliceblue;
+        margin-top: 7px;
+        animation:  head 2s   infinite ;
+        font-size:25px;
+    }
+    @keyframes head{
+        from{color:orangered;}
+        to{color: aquamarine;}
+
+    }
+    .home{
+        color: rgb(94, 94, 196);
+    }
+    #font{
+        font-family:'Times New Roman', Times, serif;
+        color: olive;
+    }
+    .card{
+        border-radius: 5px;
+    }
+     
+    #add{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 4vh;
+        background-color: black;
+        color: aqua;
+        text-decoration: none;
+    }
+    #add:hover{
+        color: orangered;
+    }
+    #heads{
+        color: orangered;
+        background-color: black;
+        animation: heads 1s   infinite ;
+    }
+    @keyframes heads{
+      from{color: orangered;}
+      to{color: rgb(200, 212, 212);}
+    }
+    .marquee{
+        font-size: 4vh;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: rgb(175, 80, 42);
+    }
+    #hurry{
+        animation:   hurry 1s  infinite ;
+    }
+    @keyframes hurry{
+        form{color:red}
+        to{color: blue;}
+    }
+    #icon{
+       margin-right: 1vh;
+    }
+    </style>
+
+  </head>
+  <body style="background-color: gray;">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+   <div class="container-fluid bg-dark pb-4">
+    <div class="grid">
+        <div class="row">
+        <div class="col-4 mt-3 "  >
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWKPamOGN1wvRMpqHIkqMu9flRuUBhuZ1duA&usqp=CAU" alt="logo" width="150px"  height="60px" class="rounded-circle" mt-2>
+        </div>
+        <div class="col-4 mt-4" style="color: aliceblue;" id="st">
+            <h4 id="logoname"> WELCOME TO INDIAN'S SHOPING</h4>
+        </div>
+    </div>
+    </div>
+   </div>
+   <br>
+   
+  <div class="container-fluid">
+    <div class="row text-center bg-warning p-2">
+        <div class="col-2 mt-2">
+            <div class="dropdown open">
+            <button   class="bg-warning border-0 btn btn-warning home">
+                <i class="fa-solid fa-house" id="icon"></i>  HOME
+            </button>
+
+        </div>
+    </div>
+        <div class="col-4">  <nav class="navbar navbar-expand-sm bg-warning navbar-warning">
+            <form class="form-inline" action="/action_page.php">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </nav>
+        </div>
+        <div class="col-2 mt-3">
+            <a href="#" data-toggle="tooltip" title="Your Account details" data-placement="bottom">ACCOUNT & LISTS</a>
+            <script>
+                $(document).ready(function(){
+                  $('[data-toggle="tooltip"]').tooltip();
+                });
+                </script>
+        </div>
+        <div class="col-2 mt-3"><a href="datavalidation.html"><i class="fa-solid fa-user-plus" id="icon"></i>SIGN IN</a></div>
+        <div class="col-2 mt-3"><a href="#">
+            <a href="#" data-toggle="popover" data-placement="bottom" title="Saved Items" data-content="Your Saved itmes are avalible here come and order"><i class="fa-solid fa-cart-plus " id="icon"></i>ADD CART</a>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div id="carouselId" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselId" data-slide-to="1"></li>
+        <li data-target="#carouselId" data-slide-to="2"></li>
+        <li data-target="#carouselId" data-slide-to="3"></li>
+        <li data-target="#carouselId" data-slide-to="4"></li>
+        <li data-target="#carouselId" data-slide-to="5"></li>
+    
+    </ol>
+    <div class="carousel-inner bg-dark" role="listbox">
+        <div class="carousel-item active">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Toys/GW/GW-Hero-PC_BBAug23_Soft-toys_with-Apay_Lifestyle_1x._CB597740150_.jpg" height="300px" alt="First slide" class="w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/July_23/ATF/Unrec/OneCard/Shoes/Shoes_3000._CB600652809_.jpg" height="300px" alt="Second slide"  class="w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/July_23/ATF/Unrec/OneCard/Jewellery/Jewl_3000._CB600652941_.jpg" height="300px" alt="Third slide"  class="w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/Shreyansh/BAU/Unrexc/D70978891_INWLD_BAU_Unrec_Uber_PC_Hero_3000x1200._CB594707876_.jpg" height="300px" alt="Third slide"  class="w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Baby/cnnjpp1/Baby/D92807365-_1_Tallhero_2xx._CB598669664_.jpg" height="300px" alt="Third slide"  class="w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/2023/GateWay/August/Unrec/PC1._CB598223457_.jpg" height="300px" alt="Third slide"  class="w-100">
+        </div>
+    </div>
+</div>
+<br>
+<div class="card-group"  >  
+    <div class="card border-0 bg-dark"  >
+            <img class="rounded-circle"  src="https://m.media-amazon.com/images/G/31/img23/Fashion/AF/Event/Jupiter23/Phase2/Halos/Main/luggage._SS300_QL85_FMpng_.png" alt=""  width="150px" height="150px">
+        </div>
+         <div class="card border-0 bg-dark">
+        <img class="rounded-circle"  src="https://m.media-amazon.com/images/G/31/img23/Fashion/AF/Event/Jupiter23/Phase2/Halos/Main/jewellery._SS300_QL85_FMpng_.png" alt="" width="150px" height="150px">
+         </div>
+         <div class="card border-0 bg-dark">
+        <img class="rounded-circle"  src="https://m.media-amazon.com/images/G/31/img23/Fashion/AF/Event/Jupiter23/Phase2/Halos/Main/handbags._SS300_QL85_FMpng_.png"  alt="" width="150px" height="150px">
+         </div>
+         <div class="card border-0 bg-dark">  
+        <img class="rounded-circle"  src=" https://m.media-amazon.com/images/G/31/img23/Fashion/AF/Event/Jupiter23/Phase2/Halos/Main/kids._SS300_QL85_FMpng_.png "  alt="" width="150px" height="150px">
+         </div>
+         <div class="card border-0 bg-dark">  
+        <img class="rounded-circle"  src="https://m.media-amazon.com/images/G/31/img23/Fashion/AF/Event/Jupiter23/Phase2/Halos/Main/lux-beauty._SS300_QL85_FMpng_.png"  alt="" width="150px" height="150px">
+         </div>
+         <div class="card border-0 bg-dark">
+        <img class="rounded-circle"  src="https://m.media-amazon.com/images/G/31/img23/Fashion/AF/Event/Jupiter23/Phase2/Halos/Main/womens._SS300_QL85_FMpng_.png  "  alt="" width="150px" height="150px">
+        </div>
+            <div class="card border-0 bg-dark">
+                <img class="rounded-circle"  src=" https://m.media-amazon.com/images/G/31/img23/Fashion/AF/Event/Jupiter23/Phase2/Halos/Main/mens._SS300_QL85_FMpng_.png" alt="Card image cap" width="150px" height="150px" >
+            </div>
+</div>
+  <br>
+  <marquee class="marquee" direction="left" loop="" scrollamount="20"><i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>FESTIVAL OFFERS<i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></marquee>
+  <br>
+  <br>
+    <div class="card-deck" style="height:50px";>
+        <div class="card">
+            <div class="card-header">
+                <h3 id="font">MENS SHIRTS</h3>
+            </div>
+            <div class="card-body">
+                <img src="https://img.freepik.com/free-photo/clothing-rack-with-hawaiian-shirts-with-floral-print_23-2149366012.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=ais" width="250px" alt="" >
+            </div>
+            <div class="card-footer">
+                <a href="#">SEE MORE</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 id="font"> SHOES</h3>
+            </div>
+            <div class="card-body">
+                <img src="https://img.freepik.com/premium-photo/shoes-with-black-brown_107612-22.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=ais" width="250px" alt="" >
+            </div>
+            <div class="card-footer">
+                <a href="#">SEE MORE</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 id="font"> PANTS</h3>
+            </div>
+            <div class="card-body">
+                <img src="https://t4.ftcdn.net/jpg/00/87/50/77/240_F_87507799_GYxdfu7e8JKnPBpGzfPjHqJvtPiZTuCZ.jpg" width="250px" alt="" >
+            </div>
+            <div class="card-footer">
+                <a href="#">SEE MORE</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 id="font">SUNGLASSES</h3>
+            </div>
+            <div class="card-body">
+                <img src="https://img.freepik.com/premium-photo/well-groomed-men-beauty-sexuality-real-men-sexy-man-sky-background-macho-man-unshaven-face-male-fashion-style-looking-very-trendy-businessman-glasses-confidence-charisma_474717-77240.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=ais" width="250px" alt="" >
+            </div>
+            <div class="card-footer">
+                <a href="#">SEE MORE</a>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container text-center"><h3 id="heads" >MENS FASION</h3></div>
+    <br>
+<div class="card-group">  
+    <div class="card">
+            <img src="https://img.freepik.com/free-photo/portrait-handsome-smiling-stylish-young-man_158538-19393.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=ais" alt=""  height="200px">
+        </div>
+         <div class="card">
+        <img src="https://img.freepik.com/premium-photo/full-body-profile-side-portrait-attractive-guy-walk-go-copy-space-put-hands-pocket-stare-wear-good-looking-outfit_274222-21301.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=ais" alt="" height="200px">
+         </div>
+         <div class="card">
+        <img src="https://img.freepik.com/free-photo/portrait-handsome-confident-stylish-hipster-lambersexual-modelman-dressed-green-sweater-jeans-fashion-male-posing-studio-near-blue-wall_158538-24057.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=ais"  alt="" height="200px">
+         </div>
+         <div class="card">  
+        <img src="https://img.freepik.com/premium-photo/young-bearded-man-model-fashion-sitting-urban-step-wearing-casual-clothes_1139-1325.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=ais"  alt="" height="200px">
+         </div>
+         <div class="card">  
+        <img src="https://img.freepik.com/free-photo/attractive-young-man-posing-isolated-white-wall_171337-16144.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=ais"  alt="" height="200px">
+         </div>
+         <div class="card">
+        <img src="https://img.freepik.com/premium-photo/stylish-casual-indian-man-wear-blue-tshirt-brown-jacket-posing-against-grey-wall_151355-12154.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=ais"  alt="" height="200px">
+        </div>
+            <div class="card">
+                <img class="card-img-top" src="https://img.freepik.com/free-photo/serious-concentrated-young-man-standing-isolated_171337-4412.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=ais" alt="Card image cap" height="200px" >
+            </div>
+</div>
+<br>
+<div class="card-deck">
+    <div class="card">
+        <img class="card-img-top" src=" https://img.freepik.com/free-photo/portrait-handsome-smiling-stylish-young-man-model-dressed-red-checkered-shirt-fashion-man-posing_158538-4909.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais" height="200vh" width="250vh" alt="">
+        <a href="#" id="add">Add Cart</a> </div>
+    <div class="card">
+        <img class="card-img-top" src="https://img.freepik.com/free-photo/portrait-handsome-fashion-stylish-hipster-businessman-model-dressed-elegant-brown-suit-sitting-near-dark_158538-11308.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais"  height="200vh" width="250vh" alt="">
+        <a href="#" id="add">Add Cart</a>
+    </div>
+    <div class="card">
+        <img src="https://img.freepik.com/free-photo/attractive-brunet-man-stylish-white-shirt-trendy-sunglasses-poses-orange-background-holds-black-jacket_197531-29464.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais" height="200vh" width="301vh"  alt="">
+        <a href="#" id="add">Add Cart</a>
+    </div>
+    <div class="card">
+        <img src="https://img.freepik.com/free-photo/retro-man-dressed-shirt-lies-floor-posing_171337-9904.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais" height="200vh" width="300vh"  alt="">
+        <a href="#" id="add">Add Cart</a>
+    </div>
+
+</div>
+<br>
+<div class="text-center">
+    <h3 class="text-warning">Offers Ends Soon <span id="hurry">Hurry UP</span></h3>
+</div>
+<br>
+<div class="card-deck">
+    <div class="card">
+        <img class="card-img-top" src="https://img.freepik.com/premium-photo/smiling-man-wearing-demi-season-clothes-street_1139-1391.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais" height="200vh" width="250vh" alt="">
+        <a href="#" id="add">Add Cart</a>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="https://img.freepik.com/free-photo/portrait-handsome-confident-stylish-hipster-lambersexual-model_158538-17999.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais "  height="200vh" width="250vh" alt="">
+        <a href="#" id="add">Add Cart</a>
+    </div>
+    <div class="card">
+        <img src="https://img.freepik.com/free-photo/cool-guy-good-mood-posing-blue-background-jumping_197531-26875.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais " height="200vh" width="301vh"  alt="">
+        <a href="#" id="add">Add Cart</a>
+    </div>
+    <div class="card">
+        <img src="https://img.freepik.com/free-photo/portrait-handsome-fashion-stylish-hipster-businessman-model-dressed-elegant-brown-suit-sitting-near-dark_158538-11305.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais " height="200vh" width="300vh"  alt="">
+        <a href="#" id="add">Add Cart</a>
+    </div>
+</div>
+<br>   
+
+<div class="card-deck">
+    <div class="card"  >
+        <div class="card-body">
+            <div>
+                <div class="row gy-5">
+                  <div class="col-6">
+                    <div class="p-3"><img src="https://img.freepik.com/free-photo/neon-portrait-young-attractive-man_158595-5139.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais "  height="100px"  width="100px" alt=""></div>
+                  </div>
+                  <div class="col-6">
+                    <div class="p-3"><img src=" https://img.freepik.com/premium-photo/confident-handsome-handsome-man-with-long-hair-beard-looking-away-while-standing-against-grey-background_425904-11114.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais  " height="100px"  width="100px" alt=""></div>
+                  </div>
+                  <div class="col-6">
+                    <div class="p-3"><img src=" https://img.freepik.com/premium-photo/portrait-young-bearded-indian-businessman-against-black-background-moody-lighting_466689-45582.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais " alt="" height="100px"  width="100px"></div>
+                  </div>
+                  <div class="col-6">
+                    <div class="p-3"><img src=" https://img.freepik.com/free-photo/portrait-serious-concentrated-man-white-shirt_171337-17406.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais " alt="" height="100px" width="100px"></div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <div>
+                <div class="row gy-5">
+                  <div class="col-6">
+                    <div class="p-3"><img src="https://img.freepik.com/free-photo/handsome-serious-man-dressed-shirt-posing_171337-10390.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais  "  height="100px"  width="100px" alt=""></div>
+                  </div>
+                  <div class="col-6">
+                    <div class="p-3"><img src="https://img.freepik.com/free-photo/portrait-handsome-confident-model-sexy-stylish-man-dressed-biker-leather-jacket-black-jeans-fashion-hipster-male-isolated-grey-background-studio-sunglasses-isolated_158538-23458.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais   " height="100px"  width="100px" alt=""></div>
+                  </div>
+                  <div class="col-6">
+                    <div class="p-3"><img src="  https://img.freepik.com/free-photo/brutal-man-model_1303-9211.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais " alt="" height="100px"  width="100px"></div>
+                  </div>
+                  <div class="col-6">
+                    <div class="p-3"><img src="  https://img.freepik.com/free-photo/portrait-handsome-smiling-hipster-businessman-model-wearing-casual-black-suit_158538-998.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais " alt="" height="100px" width="100px"></div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <div>
+                <div class="row gy-5">
+                    <div class="col-6">
+                        <div class="p-3"><img src=" https://img.freepik.com/free-photo/portrait-young-man-with-summer-clothes-thumbs-up-against-yellow-space_58466-11957.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais"  height="100px"  width="100px" alt=""></div>
+                      </div>
+                      <div class="col-6">
+                        <div class="p-3"><img src="https://img.freepik.com/free-photo/young-handsome-bearded-man-with-phone_1303-9984.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais " height="100px"  width="100px" alt=""></div>
+                      </div>
+                      <div class="col-6">
+                        <div class="p-3"><img src="https://img.freepik.com/free-photo/portrait-handsome-serious-hipster-businessman-model-wearing-casual-black-suit_158538-993.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais  " alt="" height="100px"  width="100px"></div>
+                      </div>
+                      <div class="col-6">
+                        <div class="p-3"><img src="https://img.freepik.com/free-photo/young-handsome-man-sitting-stairs_1303-10041.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais " alt="" height="100px" width="100px"></div>
+                      </div>  
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="p-3 "><img src=" https://img.freepik.com/free-photo/portrait-handsome-smiling-stylish-young-man-model-dressed-blue-shirt-clothes-fashion-man-posing-crossed-arms_158538-4979.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais"  height="100px"  width="100px" alt=""></div>
+                  </div>
+                  <div class="col-6">
+                    <div class="p-3"><img src="https://img.freepik.com/premium-photo/young-bearded-man-model-fashion-sitting-urban-step-wearing-casual-clothes_1139-1325.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais " height="100px"  width="100px" alt=""></div>
+                  </div>
+                  <div class="col-6">
+                    <div class="p-3"><img src="https://img.freepik.com/free-photo/isolated-image-positive-fashionable-young-man-with-stylish-hairdo-bristle-smiling-camera_343059-3558.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais" alt="" height="100px"  width="100px"></div>
+                  </div>
+                  <div class="col-6">
+                    <div class="p-3"><img src=" https://img.freepik.com/free-photo/handsome-young-man-park_1303-10060.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais" alt="" height="100px" width="100px"></div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+ 
+       
+
+  <br>
+  <div class="container text-center"><h3 id="heads">WOMEN'S FASION</h3></div>
+  <br>
+
+<div class="card-group">  
+    <div class="card">
+            <img src="https://img.freepik.com/free-photo/young-woman-beautiful-dress-hat_1303-17517.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais" alt=""  height="200px">
+        </div>
+         <div class="card">
+        <img src="https://img.freepik.com/premium-photo/beautiful-young-woman-with-long-hair-jewelery_78203-1980.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais" alt="" height="200px">
+         </div>
+         <div class="card">
+        <img src="https://img.freepik.com/free-photo/three-young-beautiful-smiling-girls-trendy-summer-casual-jeans-clothes-sexy-carefree-women-posing-positive-models-sunglasses_158538-4730.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais"  alt="" height="200px">
+         </div>
+         <div class="card">  
+        <img src="https://img.freepik.com/free-photo/high-fashion-portrait-young-elegant-blonde-woman-black-wool-hat-wearing-oversize-white-fringe-poncho-with-long-grey-dress_273443-3799.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais "  alt="" height="200px">
+         </div>
+         <div class="card">  
+        <img src="https://img.freepik.com/free-photo/pretty-young-stylish-sexy-woman-pink-luxury-dress-summer-fashion-trend-chic-style-sunglasses-blue-studio-background-shopping-holding-paper-bags-talking-mobile-phone-shopaholic_285396-2957.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais"  alt="" height="200px">
+         </div>
+         <div class="card">
+        <img src="https://img.freepik.com/free-photo/excited-white-girl-bright-stylish-glasses-posing-pink-dreamy-curly-woman-playing-with-her-ginger-hair-laughing_197531-11045.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais "  alt="" height="200px">
+        </div>
+            <div class="card">
+                <img  src=" https://img.freepik.com/free-photo/close-up-beauty-portrait-perfect-blond-woman-with-full-lips-natural-make-up-posing-amazing-luxury-red-dress-with-sequins-wide-sleeves-hands-near-face_273443-1716.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais" alt="Card image cap" height="200px" >
+            </div>
+</div>
+<br>
+<div class="card-deck">
+    <div class="card">
+        <img class="card-img-top" src=" https://img.freepik.com/free-photo/woman-with-shopping-bags-studio-yellow-background-isolated_1303-14294.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais" height="200vh" width="250vh" alt="">
+        <a href="#" id="add">Add Cart</a>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="https://img.freepik.com/free-photo/lovable-brunette-woman-playing-with-her-long-skirt_197531-13168.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais "  height="200vh" width="250vh" alt="">
+        <a href="#" id="add">Add Cart</a>
+    </div>
+    <div class="card">
+        <img src="https://img.freepik.com/free-photo/cheerful-girl-mini-dress-hat-coquettishly-raises-her-leg-orange-background_197531-17936.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais " height="200vh" width="301vh"  alt="">
+        <a href="#" id="add">Add Cart</a> </div>
+    <div class="card">
+        <img src="https://img.freepik.com/free-photo/beautiful-girl-with-wavy-hair-smiles-points-with-her-fingers-right-portrait-woman-red-hat-black-elegant-dress-beige-background_197531-17525.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais " height="200vh" width="300vh"  alt="">
+        <a href="#" id="add">Add Cart</a>
+    </div>
+
+</div>
+<br>
+<div class="card-deck">
+    <div class="card">
+        <img class="card-img-top" src="https://img.freepik.com/free-photo/woman-with-shopping-bags-isolated_1303-14051.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais " height="200vh" width="250vh" alt="">
+        <a href="#" id="add">Add Cart</a>
+    </div>
+    <div class="card">
+        <img class="card-img-top" src="https://img.freepik.com/free-photo/full-length-shot-glad-curly-woman-striped-pants-jumping-purple-wall-indoor-portrait-wonderful-girl-sunglasses-fooling-around_197531-5125.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais  "  height="200vh" width="250vh" alt="">
+        <a href="#" id="add">Add Cart</a>
+    </div>
+    <div class="card">
+        <img src="https://img.freepik.com/free-photo/beautiful-blonde-young-lady-stylish-straw-summer-hat-holding-colorful-spring-flower-bouquet-near-purple-wall-background_273443-1062.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais  " height="200vh" width="301vh"  alt="">
+        <a href="#" id="add">Add Cart</a>
+    </div>
+    <div class="card">
+        <img src=" https://img.freepik.com/premium-photo/portrait-beautiful-cheerful-young-brunette-woman-with-bright-makeup-wearing-fashionable-clothes-standing-isolated-pink-wall-holding-purse-looking-away_171337-119122.jpg?size=626&ext=jpg&ga=GA1.1.717319368.1696345454&semt=ais " height="200vh" width="300vh"  alt="">
+        <a href="#" id="add">Add Cart</a>
+    </div>
+</div>
+<br>   
+
+<br> 
+<div id="carouselId" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselId" data-slide-to="1"></li>
+        <li data-target="#carouselId" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/Phase2/J23_P2_PC_NTA_Hero_2x_EndsTomorrow._CB575319755_.jpg" height="250vh" width="1500px" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/Phase2/J23_P2_PC_NTA_Hero_2x_EndsTomorrow._CB575319755_.jpg" height="250vh" width="1500px"  alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img src="https://m.media-amazon.com/images/G/31/img23/Fashion/AF/Event/Jupiter23/phase2/TopScroll/PC/jewellery._CB574857449_.jpg" height="250vh" width="1500px" alt="Third slide">
+        </div>
+    </div>
+    <br>
+    <div class="card-deck">
+        <div class="card ">
+            <div class="card-header">
+                <h3 id="font">KICHEN'S  </h3>
+            </div>
+            <div class="card-body">
+                <img src=" https://img.freepik.com/free-vector/modern-luxury-kitchen-dark-brown-cabinets-with-built-microwave-oven-realistic-side-view-image-vec_1284-15165.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=ais " width="250px" height="200px" alt="" >
+            </div>
+            <div class="card-footer">
+                <a href="#">SEE MORE</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 id="font">SNAKS</h3>
+            </div>
+            <div class="card-body">
+                <img src="  https://img.freepik.com/free-photo/christmas-sweets-platter_114579-31135.jpg?size=626&ext=jpg&ga=GA1.1.789942998.1692197077&semt=sph" width="250px" height="200px" alt="" >
+            </div>
+            <div class="card-footer">
+                <a href="#">SEE MORE</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 id="font">  BOTTLE</h3>
+            </div>
+            <div class="card-body">
+                <img src="  https://img.freepik.com/free-vector/realistic-design-water-bottle-ad_23-2148280757.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=ais" width="250px" height="200px" alt="" >
+            </div>
+            <div class="card-footer">
+                <a href="#">SEE MORE</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 id="font"> HEARTS</h3>
+            </div>
+            <div class="card-body">
+                <img src="  https://img.freepik.com/free-psd/valentines-day-cute-love-hearts-decorative-composition-isolated-transparent-3d-rendering_103373-639.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=sph" width="250px" height="200px" alt="" >
+            </div>
+            <div class="card-footer">
+                <a href="#">SEE MORE</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+    <br>
+<div id="carouselId" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselId" data-slide-to="1"></li>
+    <li data-target="#carouselId" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="card-deck" >
+        <div class="card ">
+            <div class="card-header">
+                <h3 id="font">TRAVEL TICKETS</h3>
+            </div>
+            <div class="card-body">
+                <img src="  https://img.freepik.com/free-photo/full-shot-travel-concept-with-landmarks_23-2149153258.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=sph" width="250px" height="200px" alt="" >
+            </div>
+            <div class="card-footer">
+                <a href="#">SEE MORE</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 id="font"> FURNUTURE</h3>
+            </div>
+            <div class="card-body">
+                <img src="  https://t3.ftcdn.net/jpg/06/28/13/34/240_F_628133423_VTfPzf0ABn5fRVKPEE1xpLzxVdnFhpYp.jpg" width="250px" height="200px" alt="" >
+            </div>
+            <div class="card-footer">
+                <a href="#">SEE MORE</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 id="font"> ELECTRONICS</h3>
+            </div>
+            <div class="card-body">
+                <img src="https://img.freepik.com/free-photo/motherboard-closeup-technology-integrated-microchip-circuit-board-computer-processor-with-neon-light_90220-1203.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=sph  " width="250px" height="200px" alt="" >
+            </div>
+            <div class="card-footer">
+                <a href="#">SEE MORE</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 id="font"> MOBILES</h3>
+            </div>
+            <div class="card-body">
+                <img src=" https://img.freepik.com/free-photo/modern-stationary-collection-arrangement_23-2149309643.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=sph " width="250px" height="200px" alt="" >
+            </div>
+            <div class="card-footer">
+                <a href="#">SEE MORE</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card-deck" >
+        <div class="card ">
+            <div class="card-header">
+                <h3 id="font"> SOFTDRINKS</h3>
+            </div>
+            <div class="card-body">
+                <img src=" https://img.freepik.com/free-photo/cocktail-glasses_144627-34955.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=sph" width="250px" height="200px" alt="" >
+            </div>
+            <div class="card-footer">
+                <a href="#">SEE MORE</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 id="font">BEDSHITS</h3>
+            </div>
+            <div class="card-body">
+                <img src=" https://img.freepik.com/premium-photo/stack-folded-beach-towels-cover-ups-vibrant-prints_933496-308.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=ais" width="250px"height="200px" alt="" >
+            </div>
+            <div class="card-footer">
+                <a href="#">SEE MORE</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 id="font">  PROTIEN POWDER</h3>
+            </div>
+            <div class="card-body">
+                <img src="https://img.freepik.com/premium-psd/protein-jar-with-label-mockup_7956-716.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=sph " width="250px" height="200px" alt="" >
+            </div>
+            <div class="card-footer">
+                <a href="#">SEE MORE</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3 id="font"> PULCESS</h3>
+            </div>
+            <div class="card-body">
+                <img src=" https://img.freepik.com/free-photo/flat-lay-kitchen-utensils-with-grains_23-2148287504.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=sph " width="250px" height="200px" alt="" >
+            </div>
+            <div class="card-footer">
+                <a href="#">SEE MORE</a>
+            </div>
+        </div>
+    </div>
+    </div></div>
+ <br>
+ <div class="text-center">
+   <h4 id="heads">FLAT  50% off </h4>
+
+ </div>
+
+<br>
+    <div class="card-deck">
+        <div class="card"  >
+            <div class="card-header">
+                <h2 id="font">HEAD PHONES</h2>
+            </div>
+            <div class="card-body">
+                <div class="container  text-center">
+                    <div class="row gy-5">
+                      <div class="col-6">
+                        <div class="p-3"><img src="https://img.freepik.com/free-psd/black-friday-super-sale-social-media-banner-template_120329-2135.jpg?size=626&ext=jpg&ga=GA1.1.789942998.1692197077&semt=sph"  height="100px"  width="100px" alt=""></div>
+                      </div>
+                      <div class="col-6">
+                        <div class="p-3"><img src="https://img.freepik.com/premium-photo/pink-headphones-3d-illustration_878808-3793.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=sph  " height="100px"  width="100px" alt=""></div>
+                      </div>
+                      <div class="col-6">
+                        <div class="p-3"><img src=" https://img.freepik.com/free-photo/technology-millennials-lifestyle-concept-carefree-cute-brunette-female-student-put-headphones-plug-smartphone-picking-song-smiling-standing-blue-background-make-playlist-study_1258-72987.jpg?size=626&ext=jpg&ga=GA1.1.789942998.1692197077&semt=sph" alt="" height="100px"  width="100px"></div>
+                      </div>
+                      <div class="col-6">
+                        <div class="p-3"><img src=" https://img.freepik.com/premium-photo/blue-modern-headphones-with-blue-minimal-flat-background_800563-2841.jpg?size=626&ext=jpg&ga=GA1.1.789942998.1692197077&semt=sph" alt="" height="100px" width="100px"></div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="card-footer">
+                <botton class="btn btn-primary">shop now</botton>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2 id="font" >CHAINS</h2>
+            </div>
+            <div class="card-body">
+                <div class="container  text-center">
+                    <div class="row gy-5">
+                      <div class="col-6">
+                        <div class="p-3"><img src=" https://img.freepik.com/free-vector/realistic-vector-icon-set-gold-silver-chain-transparnt-background_134830-1873.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=sph  "  height="100px"  width="100px" alt=""></div>
+                      </div>
+                      <div class="col-6">
+                        <div class="p-3"><img src="https://img.freepik.com/free-vector/chain-background_23-2148113901.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=sph  " height="100px"  width="100px" alt=""></div>
+                      </div>
+                      <div class="col-6">
+                        <div class="p-3"><img src="https://img.freepik.com/free-vector/silver-gold-metal-chains-realistic-style_88138-356.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=sph  " alt="" height="100px"  width="100px"></div>
+                      </div>
+                      <div class="col-6">
+                        <div class="p-3"><img src=" https://img.freepik.com/free-vector/hand-drawing-illustration-freedom-concept_53876-35527.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=sph" alt="" height="100px" width="100px"></div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="card-footer">
+                <botton class="btn btn-primary">shop now</botton>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2 id="font">RINGS</h2>
+            </div>
+            <div class="card-body">
+                <div class="container  text-center">
+                    <div class="row gy-5">
+                        <div class="col-6">
+                            <div class="p-3"><img src="https://img.freepik.com/free-psd/black-friday-super-sale-social-media-banner-template_120329-2135.jpg?size=626&ext=jpg&ga=GA1.1.789942998.1692197077&semt=sph"  height="100px"  width="100px" alt=""></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="p-3"><img src="https://img.freepik.com/premium-photo/pink-headphones-3d-illustration_878808-3793.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=sph  " height="100px"  width="100px" alt=""></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="p-3"><img src=" https://img.freepik.com/free-photo/technology-millennials-lifestyle-concept-carefree-cute-brunette-female-student-put-headphones-plug-smartphone-picking-song-smiling-standing-blue-background-make-playlist-study_1258-72987.jpg?size=626&ext=jpg&ga=GA1.1.789942998.1692197077&semt=sph" alt="" height="100px"  width="100px"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="p-3"><img src=" https://img.freepik.com/premium-photo/blue-modern-headphones-with-blue-minimal-flat-background_800563-2841.jpg?size=626&ext=jpg&ga=GA1.1.789942998.1692197077&semt=sph" alt="" height="100px" width="100px"></div>
+                          </div>  
+                       
+                    </div>
+                  </div>
+            </div>
+            <div class="card-footer">
+                <botton class="btn btn-primary">shop now</botton>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2 id="font">WATCHES</h2>
+            </div>
+            <div class="card-body">
+                <div class="container  text-center">
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="p-3 "><img src="https://img.freepik.com/free-photo/watch-black-box-bow-tie-lie-white-windowsill_8353-687.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=sph"  height="100px"  width="100px" alt=""></div>
+                      </div>
+                      <div class="col-6">
+                        <div class="p-3"><img src="https://img.freepik.com/free-photo/close-up-seller-s-hand-gloves-shows-exclusive-men-s-watch-from-new-collection-luxury-jewelry-store_613910-20420.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=sph" height="100px"  width="100px" alt=""></div>
+                      </div>
+                      <div class="col-6">
+                        <div class="p-3"><img src="https://img.freepik.com/premium-psd/red-smartwatch-mockup_23-2147862193.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=sph" alt="" height="100px"  width="100px"></div>
+                      </div>
+                      <div class="col-6">
+                        <div class="p-3"><img src="https://img.freepik.com/premium-photo/close-up-luxury-man-wrist-watches-placed-timber-brown-background_85778-23.jpg?size=626&ext=jpg&ga=GA1.2.789942998.1692197077&semt=sph" alt="" height="100px" width="100px"></div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="card-footer">
+                <botton class="btn btn-primary">shop now</botton>
+            </div>
+        </div>
+        
+    </div>
+     
+</div>
+
+  <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br>
+<nav aria-label="Page navigation" >
+    <ul class="pagination pagination-lg justify-content-center" style="margin:20px 0">
+    <li class="page-item ">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true" >PREV</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    <li class="page-item  "><a class="page-link" href="https://www.amazon.in/?&ext_vrnc=hi&tag=googhydrabk1-21&ref=pd_sl_7hz2t19t5c_e&adgrpid=58355126069&hvpone=&hvptwo=&hvadid=610644601173&hvpos=&hvnetw=g&hvrand=9626294411482249816&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9184631&hvtargid=kwd-10573980&hydadcr=14453_2316415">1</a></li>
+    <li class="page-item"><a class="page-link" href="https://www.myntra.com/shop/men">2</a></li>
+    <li class="page-item "><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item active"><a class="page-link" href="#">5</a></li>
+    <li class="page-item"><a class="page-link" href="#">6</a></li>
+    <li class="page-item "><a class="page-link" href="#">7</a></li>
+    <li class="page-item"><a class="page-link" href="#">...</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">NEXT</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<div class="">
+    <botton class="btn btn-primary w-100">CONTACT US</botton>
+</div>
+<div class="container-fluid  bg-dark">
+    <div class="grid">
+        <div class="row">
+            <div class="col-2">
+
+            </div>
+            <div class="col-2">
+        
+                    <h6 style="color: aliceblue;" class="m-t-3">GET KNOW ABOUT US</h6>
+                    
+                    <a href="#">About us</a>
+                    <br>
+                    <a href="#">Careers</a>
+                    <br>
+                    <a href="#">Press Release</a>
+                
+            </div>
+            <div class="col-2">
+                <h6 style="color: aliceblue;">GET CONTACT US</h6>
+                
+                <a href="#">Instagram</a>
+                <br>
+                <a href="#">Facebook</a>
+                <br>
+                <a href="#">Twitter</a>
+
+            </div>
+            <div class="col-2">
+                <h6 style="color: aliceblue;">MAKE MONEY WITH US</h6>
+                
+                <a href="#">Sell On Amazon</a>
+                <br>
+                <a href="#">Sell Under Amazon Accelators</a>
+                <br>
+                <a href="#">Protect And Build Your Brand</a>
+                <br>
+                <a href="#">Selling Global With Amazon</a>
+                <br>
+                <a href="#">Fullfillment Amazon</a>
+            </div>
+            <div class="col-2">
+                <h6 style="color: aliceblue;"> LET US HELP YOU</h6>
+            
+                <a href="#"> Your account</a>
+                <br>
+                <a href="#">Help</a>
+                <br>
+                <a href="#">COVID-19 And Amazon</a>
+                <br>
+                <a href="#">Download Amazon app</a>
+                <br>
+                <a href="#">Return Safe</a>
+
+
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+    </div>
+</div>
+ 
+
+  
+</html>
